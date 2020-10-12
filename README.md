@@ -19,7 +19,7 @@ __db.createCollection("teams")__
 db.teams.insert({name: "Barcelona", city:"Barcelona", awards: 20, sponsor: "Adidas"})\
 db.teams.insert({name: "Boca", city:"Buenos Aires", awards: 10})\
 db.teams.insert({name: "Real Madrid", city:"Madrid", awards: 27, sponsor: "Nike"})\
-### Find players
+### Find teams
 __db.teams.find()__
 
 ### Create collection:
