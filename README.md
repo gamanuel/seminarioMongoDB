@@ -116,3 +116,45 @@ db.createCollection("movie")
 
 ```
 
+### Actualizar películas agregando el field highlighted=true a aquellas con rating > 4.5:
+```
+ db.movie.updateMany(
+    { rating: {$gt: 4.5} },
+    { 
+    $set: {
+        highlighted: true
+    }
+})
+
+```
+
+### Actualizar películas cambiando el genre “drama” por “bored”:
+```
+db.movie.updateMany(
+    { genre: "Drama" },
+    { 
+    $set: {
+        genre: "Bored"
+    }
+})
+```
+
+### Borrar todas las películas que tengan más de 30 años:
+```
+db.movie.deleteMany({year: {$lt: 2020 - 30 }})
+```
+
+### Buscar todas las películas argentinas:
+```
+db.movie.find({country: "Argentina"})
+```
+
+### Buscar todas las películas de acción con un buen rating (ej. > 4.0) que hayan salido los últimos 2 años:
+```
+db.movie.find({genre: "Accion",rating: {$gt: 4.0},year:{$gte: 2020 - 2}})
+```
+
+
+
+
+
