@@ -252,7 +252,7 @@ db.movie.find({genre: "Accion",rating: {$gt: 4.0},year:{$gte: 2020 - 2}})
 
 ### Listar todas las películas del año 2018:
 ```
-
+db.movie.find({year: 1999})
 ```
 
 
