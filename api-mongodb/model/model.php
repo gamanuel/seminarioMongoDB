@@ -7,9 +7,6 @@ class model {
 
   public function __construct(){
 
-    $user = "username";
-    $pwd = 'password';
-
     $this->mongo = new MongoDB\Client("mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false");
     
     try {
