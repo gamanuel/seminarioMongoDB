@@ -1,7 +1,7 @@
 # seminarioMongoDB
 
 ## myLib documentation
-Ver tarea 1 [here](Ejercicios/tarea1.md)
+Ver tarea 1 [here](Ejercicios/tarea1)
 
 ## Ejercicio Clase 1:
 
