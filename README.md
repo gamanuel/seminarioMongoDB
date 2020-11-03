@@ -1,5 +1,8 @@
 # seminarioMongoDB
 
+## myLib documentation
+Ver tarea 1 [here](Tarea/tarea1.md)
+
 ## Ejercicio Clase 1:
 
 ### Create collection:
