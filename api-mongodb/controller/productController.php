@@ -15,7 +15,7 @@ class productController extends Controller {
     $this->response->data = $this->apiModel->getProducts();
     $this->response->status = 'success';
 
-    print_r(json_encode($this->response));
+    print_r($this->response);
     die();
   }
 
@@ -31,7 +31,7 @@ class productController extends Controller {
     $this->response->data = $this->apiModel->addProduct($product);
     $this->response->status = 'success';
 
-    print_r(json_encode($this->response));
+    print_r($this->response);
     die();
   }
 
@@ -55,7 +55,7 @@ class productController extends Controller {
       $this->response->status = 'error - product not found';
     }
 
-    print_r(json_encode($this->response));
+    print_r($this->response);
     die();
   }
 
@@ -72,7 +72,7 @@ class productController extends Controller {
       $this->response->status = 'error - product not found';
     }
 
-    print_r(json_encode($this->response));
+    print_r($this->response);
     die();
   }
 
@@ -89,7 +89,7 @@ class productController extends Controller {
       $this->response->status = 'error - product not found';
     }
 
-    print_r(json_encode($this->response));
+    print_r($this->response);
     die();
   }
 }

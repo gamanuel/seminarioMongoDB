@@ -15,7 +15,7 @@ class saleController extends Controller {
         $this->response->data = $this->apiModel->getSales();
         $this->response->status = 'success';
 
-        print_r(json_encode($this->response));
+        print_r($this->response);
         die(); 
     }
 
@@ -32,7 +32,7 @@ class saleController extends Controller {
         $this->response->status = 'error - sale not found';
         }
 
-        print_r(json_encode($this->response));
+        print_r($this->response);
         die();
     }
 
@@ -49,7 +49,7 @@ class saleController extends Controller {
             }
             else {
                 $this->response->status = 'error - product not found';
-                print_r(json_encode($this->response));
+                print_r($this->response);
                 die();
             }
         }
@@ -61,7 +61,7 @@ class saleController extends Controller {
         $this->response->data = $this->apiModel->addSale($sale);
         $this->response->status = 'success';
 
-        print_r(json_encode($this->response));
+        print_r($this->response);
         die();
     } 
 
